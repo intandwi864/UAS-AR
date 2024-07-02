@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - Augmented Reality Tour</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Augmented Reality Tour</h1>
+        <button onclick="goToARScene()">Star</button>
+        <button onclick="goToMarkerPage()">Marker</button>
+        <button onclick="goToGuidePage()">Panduan</button>
+    </div>
+
+    <script>
+        function goToARScene() {
+            window.location.href = "ar_scene.html"; // Ganti dengan lokasi halaman AR scene Anda
+        }
+
+        function goToMarkerPage() {
+            window.location.href = "marker.html"; // Ganti dengan lokasi halaman Marker Anda
+        }
+
+        function goToGuidePage() {
+            window.location.href = "guide.html"; // Ganti dengan lokasi halaman Panduan Anda
+        }
+    </script>
+
+</body>
+</html>
